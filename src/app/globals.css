@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 body {
@@ -12,6 +12,19 @@ body {
 
 Header {
   background-color: var(--foreground);
+}
+nav a {
+  color: #ffffff; 
+  font-family:  var(--font-montserrat), sans-serif;
+  font-weight: 400; 
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: .05em;
+}
+
+nav a:hover {
+  color: #0f31a6; /* Tailwind’s gray-900 */
+  text-decoration: underline;
 }
 
 h1 {
