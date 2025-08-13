@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 export default function HomeSection() {
   return (
-    <section className="w-screen h-[440px] md:h-[755px] bg-[url('/parkinglot.jpg')] bg-cover bg-center relative">
+    <section className="w-screen h-[440px] md:h-[760px] bg-[url('/parkinglot.jpg')] bg-cover bg-center relative">
       {/* Overlay for better contrast OPTIONAL TEST LATER */}
       <div className="absolute inset-0 bg-black/20"></div> 
 
@@ -24,7 +24,7 @@ export default function HomeSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 3 }}
-           >to a Whole<br className="md:hidden" /> 
+           >to a Whole <br className="md:hidden" /> 
          <span className="font-bold">New Level</span>
          </motion.span>
         </h1>
