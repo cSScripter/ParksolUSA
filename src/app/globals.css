@@ -53,7 +53,7 @@ a:hover {
 /* Small Screens */
 @media (max-width: 768px) {
   h1 {
-    font-size: 4rem; 
+    font-size: 3.5rem; 
     line-height: 1.2;
   }
 }
