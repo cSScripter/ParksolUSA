@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 // Meta Data Title and Icon Tab
 export const metadata: Metadata = {
   title: "ParksolUSA",
-  description: "Short SEO-friendly description",
+  description: "Parking systems company specializing in the latest technology including AI detection, counting software, sensors, and LEDS.",
   icons: {
     icon: "/favicon.png",
   },
