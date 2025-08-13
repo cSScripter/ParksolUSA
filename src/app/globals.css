@@ -30,6 +30,15 @@ nav a:hover {
 h1 {
   font-family: var(--font-montserrat), sans-serif;
   font-weight: 400;
+  font-size: 131px;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+
+h2 {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
   font-size: 41px;
 }
 
@@ -39,4 +48,12 @@ a {
 
 a:hover {
   text-decoration: none !important;
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem; 
+    line-height: 1.2;
+  }
 }
