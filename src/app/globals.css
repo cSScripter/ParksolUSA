@@ -51,14 +51,14 @@ h2 {
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.25rem;
   letter-spacing: 0.05em;
 }
 
 li {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.05em;
 }
@@ -95,6 +95,25 @@ a:hover {
     font-size: 3.5rem; 
     line-height: 1.2;
   }
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px; 
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+  
 }
 
 /* Medium Screens */

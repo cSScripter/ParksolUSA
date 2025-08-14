@@ -25,7 +25,7 @@ export default function Aipgs() {
         navigation
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop
-        className="w-full max-w-sm md:max-w-lg bg-white"
+        className="w-full max-w-xs md:max-w-lg bg-white"
       >
         {images.map((src, i) => (
           <SwiperSlide key={i}>
@@ -40,7 +40,7 @@ export default function Aipgs() {
     </div>
 
     {/* Text in right column */}
-    <div className="flex flex-col justify-start items-start mx-2 md:mx-0">
+    <div className="flex flex-col justify-start items-start mx-1 md:mx-0">
       <h2>AI Parking Guiding<br /> System</h2>
       <p className="my-5">ParksolUSA video analytic space system includes:</p>
       <ul className="list-disc my-1 ml-7 space-y-2">
