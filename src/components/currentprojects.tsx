@@ -3,8 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Link from "next/link";
 
-//refractor tomorrow for const slides instead of images with description and button
+//refactor tomorrow for const slides instead of images with description and button
 
 export default function CurrentProjects() {
     const images = [
@@ -30,7 +31,13 @@ export default function CurrentProjects() {
                   src={src}
                   alt={`Slide ${i + 1}`}
                   className="w-full h-full object-cover transition duration-1500 ease-out"
-                /><div className="absolute flex items-center justify-center inset-0"><h1> Hello!</h1>
+                /><div className="absolute flex items-start justify-start inset-0 p-20"><div className="bg-white p-6 w-140 shadow-md">
+                  <h2>Case Study: The Ritz-Carlton at Half Moon Bay</h2><br />
+                  <p>See a coastal parking garage transformed with the technology of smart parking.</p> <br />
+                  <Link href="#" className="bg-[#5e748a] text-white font-bold text-lg hover:bg-blue-200 hover:text-black py-2 px-4 rounded-md">
+                  Read More
+                  </Link>
+                  </div>
                 </div>
                 </div>
               </SwiperSlide>
