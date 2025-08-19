@@ -55,6 +55,19 @@ h2 {
   font-size: 41px;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 41px;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -106,13 +119,27 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 32px; 
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
 }
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+} 
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+} 
+
 p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 18px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 
 li {
