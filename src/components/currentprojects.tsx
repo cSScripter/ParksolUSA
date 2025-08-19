@@ -31,11 +31,11 @@ export default function CurrentProjects() {
                   src={src}
                   alt={`Slide ${i + 1}`}
                   className="w-full h-full object-cover transition duration-1500 ease-out"
-                /><div className="absolute flex items-center justify-center md:items-start md:justify-start inset-0 md:p-20">
-                  <div className="bg-white p-4 md:p-10 w-80 md:w-140 shadow-md">
-                  <h3>Case Study: The Ritz-Carlton at Half Moon Bay</h3><br />
-                  <h4>See a coastal parking garage transformed with the technology of smart parking.</h4> <br />
-                  <Link href="#" className="bg-[#5e748a] text-white font-bold text-sm md:text-lg hover:bg-blue-200 hover:text-black py-1 px-2 md:py-2 md:px-4 rounded-md">
+                /><div className="absolute flex items-center justify-center md:items-start md:justify-start inset-0 lg:p-20 md:p-10">
+                  <div className="bg-white opacity-90 p-4 md:p-8 w-60 md:w-140 shadow-md">
+                  <h3>Case Study: The Ritz-Carlton at Half Moon Bay</h3><br className="hidden md:block" />
+                  <h4>See a coastal parking garage transformed with the technology of smart parking.</h4> <br className="hidden md:block" />
+                  <Link href="#" className="bg-[#5e748a] text-white font-bold text-xs md:text-lg hover:bg-blue-200 hover:text-black py-1 px-2 md:py-2 md:px-4 rounded-md">
                   Read More
                   </Link>
                   </div>
