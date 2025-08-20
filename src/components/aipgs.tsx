@@ -20,6 +20,10 @@ export default function Aipgs() {
         {/* Swiper in left column */}
         <div className="w-full md:w-1/2 flex justify-center">
           <Swiper
+           onSwiper={(swiper) => {
+    swiper.autoplay.stop(); // initially stop
+    setTimeout(() => swiper.autoplay.start(), 6000); // start after 200ms
+  }}
             modules={[Navigation, Autoplay]}
             navigation
             autoplay={{ delay: 4000, disableOnInteraction: false }}
