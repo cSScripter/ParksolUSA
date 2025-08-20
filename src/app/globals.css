@@ -7,9 +7,14 @@
   --foreground: #000000;
 }
 
+Header {
+  @apply fixed top-0 left-0 w-full z-50;
+}
+
 html, body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+  padding-top:93px;
 }
 
 html {
@@ -115,6 +120,9 @@ a:hover {
     font-size: 3.5rem; 
     line-height: 1.2;
   }
+  html, body {
+  padding-top:70px;
+}
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;

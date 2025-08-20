@@ -35,17 +35,17 @@ export default function FutureOfParking() {
   }, [loopStarted]);
 
   return (
-    <section className="flex flex-col px-5 py-5 justify-center items-center">
+    <section className="flex flex-col px-5 py-5 justify-center items-center mb-5 md:mb-30">
       <h2 className="mt-5 md:mt-30 text-center">
         <span className="font-bold">THE FUTURE</span> OF PARKING IS{" "}
         <span className="font-bold">HERE</span>
       </h2>
       <motion.div
         className="relative min-h-[40vh] md:mt-20 w-full flex justify-center items-center"
-        onViewportEnter={() => setTimeout(() => setLoopStarted(true), 200)}
+        onViewportEnter={() => setTimeout(() => setLoopStarted(true), 400)}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.9 }}
+        viewport={{ once: true, amount: 0.8 }}
       >
         <AnimatePresence mode="wait">
           <motion.div

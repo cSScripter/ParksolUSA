@@ -3,6 +3,7 @@ import HomeSection from "@/components/homesection";
 import Aipgs from "@/components/aipgs";
 import CurrentProjects from "@/components/currentprojects";
 import FutureOfParking from "@/components/futureofparking";
+import ParkSoft from "@/components/parksoft";
 
 export default function Home() {
 return (
@@ -11,6 +12,7 @@ return (
     <Aipgs />
     <CurrentProjects />
     <FutureOfParking />
+    <ParkSoft />
   </>
 );
 }
