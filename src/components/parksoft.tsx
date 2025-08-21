@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+//change button color
 export default function ParkSoft() {
   return (
     <section className="relative w-full h-[50vw]">
@@ -44,7 +44,7 @@ export default function ParkSoft() {
             </p>
             <Link
               href="#"
-              className="bg-blue-400 text-white !text-[16px] md:text-lg hover:bg-blue-800 hover:text-black py-1 px-2 md:py-3 md:px-4"
+              className="bg-[#67bfeb] text-white !text-[16px] md:text-lg hover:bg-[#12212f] py-1 px-2 md:py-3 md:px-4"
             >
               Learn More
             </Link>
