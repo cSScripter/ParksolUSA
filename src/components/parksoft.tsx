@@ -5,7 +5,7 @@ import Link from "next/link";
 //change button color
 export default function ParkSoft() {
   return (
-    <section className="relative w-full h-[50vw]">
+    <section className="relative w-full h-[50vw] min-h-[500px]">
       <Image
         src="/parksoftbg.png"
         alt="background"
@@ -14,7 +14,7 @@ export default function ParkSoft() {
         priority
       />
       {/*overlay*/}
-      <div className="absolute inset-0 flex flex-col px-5 md:px-0">
+      <div className="absolute inset-0 flex flex-col px-5 md:px-5">
         <motion.div
           className="flex flex-col justify-start items-center mb-[10%] mt-5 md:mt-24"
           initial={{ x: 100, opacity: 0 }}
