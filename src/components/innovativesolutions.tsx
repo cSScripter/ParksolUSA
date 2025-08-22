@@ -6,7 +6,7 @@ export default function InnovativeSolutions() {
       </h2>
 
       <div className="flex w-full flex-col md:flex-row items-center justify-center gap-5 md:gap-10 mt-5 md:my-10">
-        <h3 className="md:pt-10 md:pb-10">
+        <h3 className="md:pt-15 md:pb-15">
           We offer <span className="font-bold">more control</span> over your
           spaces - <br /> whether you have a multi-level parking <br /> garage,
           outdoor lot, or{" "}
