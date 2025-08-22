@@ -5,8 +5,8 @@ export default function InnovativeSolutions() {
         <span className="font-bold">Innovative</span> Solutions
       </h2>
 
-      <div className="flex w-full flex-col md:flex-row items-center justify-center gap-5 md:gap-10 mt-5 md:my-10">
-        <h3 className="md:pt-15 md:pb-15">
+      <div className="flex w-full flex-col md:flex-row items-center justify-center my-5 gap-5 md:gap-10 mt-5 md:my-20">
+        <h3 className="md:pt-15 md:pb-15 !font-normal">
           We offer <span className="font-bold">more control</span> over your
           spaces - <br /> whether you have a multi-level parking <br /> garage,
           outdoor lot, or{" "}

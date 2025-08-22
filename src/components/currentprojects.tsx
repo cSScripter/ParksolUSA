@@ -13,21 +13,21 @@ export default function CurrentProjects() {
   const slides = [
     {
       image: "/projectsLAX.png",
-      h2: "Current Project: LAX",
+      h3: "Current Project: LAX",
       h4: "Construction is underway to overhaul parking at one of the busiest airports in the world.",
       buttonText: "Read More",
       buttonLink: "#",
     },
     {
       image: "/projectsRitz.jpg",
-      h2: "Case Study: The Ritz-Carlton at Half Moon Bay",
+      h3: "Case Study: The Ritz-Carlton at Half Moon Bay",
       h4: "See a coastal parking garage transformed with the technology of smart parking.",
       buttonText: "Read More",
       buttonLink: "#",
     },
     {
       image: "/projectsHooverDam.jpg",
-      h2: "Case Study: The Hoover Dam",
+      h3: "Case Study: The Hoover Dam",
       h4: "The national historic landmark received a much-needed ultramodern parking renovation.",
       buttonText: "Read More",
       buttonLink: "#",
@@ -52,7 +52,7 @@ export default function CurrentProjects() {
               />
               <div className="absolute flex items-center md:items-start justify-center md:justify-start inset-0 lg:p-25 md:p-10">
                 <div className="bg-white opacity-90 p-4 md:p-8 w-60 md:w-140 shadow-md">
-                  <h2 className="!font-medium">{slide.h2}</h2>
+                  <h3>{slide.h3}</h3>
                   <br className="hidden md:block" />
                   <h4 className="text-gray-600">{slide.h4}</h4>{" "}
                   <br className="hidden md:block" />
