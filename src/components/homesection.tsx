@@ -1,13 +1,21 @@
 "use client";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export default function HomeSection() {
   return (
-    <section className="w-screen h-[440px] md:h-[760px] bg-[url('/parkinglot.jpg')] bg-cover bg-center relative">
-      {/* Overlay for better contrast OPTIONAL TEST LATER */}
+    <section className="w-screen h-[440px] md:h-[760px] relative">
+      
+      <Image
+        src="/parkinglot.jpg"
+        alt="Parking lot"
+        fill
+        priority={false} // lazy by default unless priority={true}
+        className="object-cover object-center"
+      />
       <div className="absolute inset-0 bg-black/20"></div>
 
-      {/* Text container, stays above overlay */}
+      
       <div className="relative flex items-start md:items-center justify-center h-full px-4 pt-16 md:pt-0">
         <h1 className="text-center">
           <motion.span
