@@ -34,7 +34,7 @@ export default function CurrentProjects() {
     },
   ];
   return (
-    <section className="flex justify-center items-center border-y border-gray-200 p-5 md:p-20">
+    <section className="flex justify-center items-center border-y border-gray-300 p-5 md:p-20">
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
@@ -51,8 +51,8 @@ export default function CurrentProjects() {
                 className="w-full h-full object-cover transition duration-1500 ease-out"
               />
               <div className="absolute flex items-center md:items-start justify-center md:justify-start inset-0 lg:p-25 md:p-10">
-                <div className="bg-white opacity-90 p-4 md:p-8 w-60 md:w-140 shadow-md">
-                  <h3>{slide.h3}</h3>
+                <div className="bg-white opacity-90 p-4 md:p-8 w-60 md:w-150 shadow-md">
+                  <h3 className="md:!text-[50px]">{slide.h3}</h3>
                   <br className="hidden md:block" />
                   <h4 className="text-gray-600">{slide.h4}</h4>{" "}
                   <br className="hidden md:block" />
