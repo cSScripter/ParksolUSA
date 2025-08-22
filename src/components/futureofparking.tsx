@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, motion } from "motion/react";
 import { useState, useEffect } from "react";
-
+//change timer on loop
 export default function FutureOfParking() {
   const slides = [
     { image: "/FuturePOD.png", textRight: null, textLeft: null },
