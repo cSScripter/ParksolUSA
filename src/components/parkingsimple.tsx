@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+//add button under h3
 export default function ParkingSimple() {
   return (
     <section className="flex flex-col w-full items-center px-5 md:px-20 mb-5 md: md-20 gap-5 mt-5 md:mt-20 border-b border-gray-300">
@@ -16,13 +16,13 @@ export default function ParkingSimple() {
           className="aspect-[650/430] object-cover"
         />
         <h3 className="!font-normal text-center md:text-left">
-          <span className="font-bold">With real-time occupancy displays</span>
+          <span className="font-bold">With real-time occupancy displays{" "}</span>
           <br className="hidden md:block" />
           and easy-to-follow guidance, drivers
           <br className="hidden md:block" /> can quickly pinpoint open spaces,
           <br className="hidden md:block" />
           which makes parking a breeze. <br className="hidden md:block" />
-          <br />
+          <br /><br className="block md:hidden" /> 
           <span className="font-bold">Dynamic LED displays</span> offer an{" "}
           <br className="hidden md:block" />
           uncomplicated and stress-free
