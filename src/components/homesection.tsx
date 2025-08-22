@@ -10,7 +10,7 @@ export default function HomeSection() {
         src="/parkinglot.jpg"
         alt="Parking lot"
         fill
-        priority={true} // lazy by default unless priority={true}
+        priority={true} 
         className="object-cover object-center"
       />
       <div className="absolute inset-0 bg-black/20"></div>
