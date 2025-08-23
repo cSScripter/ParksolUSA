@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ParkingSimple() {
   return (
-    <section className="flex flex-col w-full items-center pb-5 md:pb-20 mb-5 md: md-20 gap-5 mt-5 md:mt-24 border-b border-gray-300">
+    <section className="flex flex-col w-full items-center px-5 pb-5 md:pb-20 mb-5 md: md-20 gap-5 mt-5 md:mt-24 border-b border-gray-300">
       <h2 className="text-center">
         Parking Made <span className="font-bold">Simple</span>
       </h2>
@@ -37,7 +37,7 @@ export default function ParkingSimple() {
           </h3>
           <Link
             href="#"
-            className="self-start flex-grow-0 bg-[#5e748a] text-white text-xs md:text-lg hover:bg-blue-200 hover:text-black py-1 px-2 md:py-2 md:px-4"
+            className="self-center md:self-start flex-grow-0 bg-[#5e748a] text-white text-xs md:text-lg hover:bg-blue-200 hover:text-black py-1 px-2 md:py-2 md:px-4"
           >
             View All Products
           </Link>
