@@ -20,7 +20,7 @@ export default function CitySmart() {
           Using up-to-date <span className="font-bold">data intelligence</span>{" "}
           and <br className="hidden md:block" /> analytics, cities are able to
           improve on <br className="hidden md:block" />
-          residents' daily life by{" "}
+          residents&apos; daily life by{" "}
           <span className="font-bold">implementing</span>
           <br className="hidden md:block" /> better communication, travel
           versatility,

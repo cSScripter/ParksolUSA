@@ -17,7 +17,6 @@ export default function NavBar() {
       <div className="hidden md:flex justify-between space-x-12">
         <Link href="/">HOME</Link>
         <Link href="/about">ABOUT US</Link>
-
         <div className="relative group">
           <Link href="#" className="flex items-center space-x-1 cursor-pointer">
             <span>PRODUCTS AND SERVICES</span>

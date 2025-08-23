@@ -8,7 +8,7 @@ export default function VehicleLocation() {
           Making Cities <span className="font-bold">Smarter</span>
         </h2>
         <p className="text-center md:text-left p-5">
-          Eliminate drivers' frustration by providing
+          Eliminate drivers&apos; frustration by providing
           <br className="hidden md:block" /> our{" "}
           <span className="font-bold">QR code</span> or app-supported vehicle
           <br className="hidden md:block" />
