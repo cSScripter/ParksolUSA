@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,43 +15,43 @@ export default function NavBar() {
   return (
     <nav className="flex justify-between space-x-12">
       <div className="hidden md:flex justify-between space-x-12">
-        <a href="/">HOME</a>
-        <a href="/about">ABOUT US</a>
+        <Link href="/">HOME</Link>
+        <Link href="/about">ABOUT US</Link>
 
         <div className="relative group">
-          <a href="#" className="flex items-center space-x-1 cursor-pointer">
+          <Link href="#" className="flex items-center space-x-1 cursor-pointer">
             <span>PRODUCTS AND SERVICES</span>
             <span className="text-xs leading-none">v</span>
-          </a>
+          </Link>
           {/* drop down menu */}
           <div className="absolute left-0 top-full mt-0-64 bg-black hidden group-hover:block z-50 pt-2 pb-2">
-            <a href="#" className="block px-4 py-2">
+            <Link href="#" className="block px-4 py-2">
               Our Products
-            </a>
-            <a href="#" className="block px-4 py-2 whitespace-nowrap">
+            </Link>
+            <Link href="#" className="block px-4 py-2 whitespace-nowrap">
               Parksoft&trade; Garage Management Software
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="relative group">
-          <a href="#" className="flex items-center space-x-1 cursor-pointer">
+          <Link href="#" className="flex items-center space-x-1 cursor-pointer">
             <span>PROJECTS</span>
             <span className="text-xs leading-none">v</span>
-          </a>
+          </Link>
           {/* drop down menu */}
           <div className="absolute left-0 top-full mt-0 bg-black hidden group-hover:block z-50 pt-2 pb-2">
-            <a href="#" className="block px-4 py-2">
+            <Link href="#" className="block px-4 py-2">
               Current Projects
-            </a>
-            <a href="#" className="block px-4 py-2 whitespace-nowrap">
+            </Link>
+            <Link href="#" className="block px-4 py-2 whitespace-nowrap">
               Portfolio/Case Studies
-            </a>
+            </Link>
           </div>
         </div>
 
-        <a href="#">CONTACT US</a>
-        <a href="#">MEMBER LOGIN</a>
+        <Link href="#">CONTACT US</Link>
+        <Link href="#">MEMBER LOGIN</Link>
       </div>
 
       {/* mobile devices */}
@@ -77,12 +78,12 @@ export default function NavBar() {
           >
             &times;
           </button>
-          <a href="/" className="text-lg font-semibold">
+          <Link href="/" className="text-lg font-semibold">
             HOME
-          </a>
-          <a href="/about" className="text-lg font-semibold">
+          </Link>
+          <Link href="/about" className="text-lg font-semibold">
             ABOUT US
-          </a>
+          </Link>
           <button
             className="w-full flex items-center justify-center"
             onClick={() => toggleSection("products")}
@@ -106,12 +107,12 @@ export default function NavBar() {
           </button>
           {openSection === "products" && (
             <div className="pl-4 flex flex-col space-y-2 w-full">
-              <a href="#" className="text-base text-center">
+              <Link href="#" className="text-base text-center">
                 Our Products
-              </a>
-              <a href="#" className="text-base text-center whitespace-nowrap">
+              </Link>
+              <Link href="#" className="text-base text-center whitespace-nowrap">
                 Parksoft&trade; Garage Management Software
-              </a>
+              </Link>
             </div>
           )}
 
@@ -138,21 +139,21 @@ export default function NavBar() {
           </button>
           {openSection === "projects" && (
             <div className="pl-4 flex flex-col space-y-2 w-full">
-              <a href="#" className="text-base text-center">
+              <Link href="#" className="text-base text-center">
                 Current Projects
-              </a>
-              <a href="#" className="text-base text-center whitespace-nowrap">
+              </Link>
+              <Link href="#" className="text-base text-center whitespace-nowrap">
                 Portfolio/Case Studies
-              </a>
+              </Link>
             </div>
           )}
 
-          <a href="#" className="text-lg font-semibold">
+          <Link href="#" className="text-lg font-semibold">
             CONTACT US
-          </a>
-          <a href="#" className="text-lg font-semibold">
+          </Link>
+          <Link href="#" className="text-lg font-semibold">
             MEMBER LOGIN
-          </a>
+          </Link>
         </div>
       )}
     </nav>
