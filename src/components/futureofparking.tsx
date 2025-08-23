@@ -13,7 +13,7 @@ export default function FutureOfParking() {
     },
   ];
 
-  const duration = 6;
+  const duration = 5;
   const [current, setCurrent] = useState(0);
   const [loopStarted, setLoopStarted] = useState(false);
 
@@ -45,7 +45,7 @@ export default function FutureOfParking() {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ duration: 1.2 }}
         onViewportEnter={() => {
-          setTimeout(() => setLoopStarted(true), 100);
+          setTimeout(() => setLoopStarted(true), 0); //duartion for first slide adjustor
         }}
       >
         <AnimatePresence mode="wait">
@@ -70,7 +70,7 @@ export default function FutureOfParking() {
             {/* Optional text */}
             {slides[current].textRight && slides[current].textLeft && (
               <motion.div
-                className="absolute bottom-10 text-center"
+                className="absolute bottom-10 text-center hidden md:block"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}

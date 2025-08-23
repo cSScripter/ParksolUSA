@@ -1,4 +1,4 @@
-//test encryped media for cookies error in lighthouse!!
+
 export default function InnovativeSolutions() {
   return (
     <section className="flex flex-col items-center pt-5 md:pb-20 md:gap-5 md:pt-20 px-5 md:px-20 border-b border-gray-300">
