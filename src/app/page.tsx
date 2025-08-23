@@ -7,6 +7,7 @@ import ParkSoft from "@/components/parksoft";
 import InnovativeSolutions from "@/components/innovativesolutions";
 import ParkingSimple from "@/components/parkingsimple";
 import CitySmart from "@/components/citysmart";
+import VehicleLocation from "@/components/vehiclelocation";
 
 export default function Home() {
 return (
@@ -19,6 +20,7 @@ return (
     <InnovativeSolutions />
     <ParkingSimple />
     <CitySmart />
+    <VehicleLocation />
   </>
 );
 }

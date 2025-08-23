@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CitySmart() {
   return (
-    <section className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-20 p-5 my-5 md:my-24">
+    <section className="flex flex-col md:flex-row justify-center items-center gap-5 pb-5 md:pb-24 md:gap-20 p-5 mt-5 md:mt-24 border-b border-gray-300">
       <div>
         <Image
           src="/citysmart.avif"
@@ -14,9 +14,9 @@ export default function CitySmart() {
       </div>
       <div className="flex flex-col gap-5">
         <h2 className="text-center">
-          Making Cities <span className="font-bold">Smarter</span>
+        <span className="font-bold">Efforless</span> Vehicle Location
         </h2>
-        <p className="text-center md:text-left">
+        <p className="text-center md:text-left p-5">
           Using up-to-date <span className="font-bold">data intelligence</span>{" "}
           and <br className="hidden md:block" /> analytics, cities are able to
           improve on <br className="hidden md:block" />

@@ -14,8 +14,8 @@ export default function NavBar() {
   return (
     <nav className="flex justify-between space-x-12">
       <div className="hidden md:flex justify-between space-x-12">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
+        <a href="/">HOME</a>
+        <a href="/about">ABOUT US</a>
 
         <div className="relative group">
           <a href="#" className="flex items-center space-x-1 cursor-pointer">
@@ -77,10 +77,10 @@ export default function NavBar() {
           >
             &times;
           </button>
-          <a href="#" className="text-lg font-semibold">
+          <a href="/" className="text-lg font-semibold">
             HOME
           </a>
-          <a href="#" className="text-lg font-semibold">
+          <a href="/about" className="text-lg font-semibold">
             ABOUT US
           </a>
           <button

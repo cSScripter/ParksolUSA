@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function ParkingSimple() {
   return (
-    <section className="flex flex-col w-full items-center px-5 md:px-20 mb-5 md: md-20 gap-5 mt-5 md:mt-20 border-b border-gray-300">
+    <section className="flex flex-col w-full items-center pb-5 md:pb-20 mb-5 md: md-20 gap-5 mt-5 md:mt-24 border-b border-gray-300">
       <h2 className="text-center">
         Parking Made <span className="font-bold">Simple</span>
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center my-5 gap-5 md:gap-20 mt-5 md:my-20">
+      <div className="flex flex-col md:flex-row items-center justify-center my-5 gap-5 md:gap-20 mt-5 md:my-15">
         <Image
           src="/parkinggarage.avif"
           alt="Parking Garage Signs"
