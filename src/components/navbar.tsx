@@ -17,40 +17,41 @@ export default function NavBar() {
       <div className="hidden md:flex justify-between space-x-12">
         <Link href="/">HOME</Link>
         <Link href="/about">ABOUT US</Link>
+
         <div className="relative group">
-          <Link href="#" className="flex items-center space-x-1 cursor-pointer">
+          <Link href="/products" className="flex items-center space-x-1 cursor-pointer">
             <span>PRODUCTS AND SERVICES</span>
             <span className="text-xs leading-none">v</span>
           </Link>
           {/* drop down menu */}
           <div className="absolute left-0 top-full mt-0-64 bg-black hidden group-hover:block z-50 pt-2 pb-2">
-            <Link href="#" className="block px-4 py-2">
+            <Link href="/products" className="block px-4 py-2">
               Our Products
             </Link>
-            <Link href="#" className="block px-4 py-2 whitespace-nowrap">
+            <Link href="/parksoft" className="block px-4 py-2 whitespace-nowrap">
               Parksoft&trade; Garage Management Software
             </Link>
           </div>
         </div>
 
         <div className="relative group">
-          <Link href="#" className="flex items-center space-x-1 cursor-pointer">
+          <Link href="/projects" className="flex items-center space-x-1 cursor-pointer">
             <span>PROJECTS</span>
             <span className="text-xs leading-none">v</span>
           </Link>
           {/* drop down menu */}
           <div className="absolute left-0 top-full mt-0 bg-black hidden group-hover:block z-50 pt-2 pb-2">
-            <Link href="#" className="block px-4 py-2">
+            <Link href="/projects" className="block px-4 py-2">
               Current Projects
             </Link>
-            <Link href="#" className="block px-4 py-2 whitespace-nowrap">
+            <Link href="/case-studies" className="block px-4 py-2 whitespace-nowrap">
               Portfolio/Case Studies
             </Link>
           </div>
         </div>
 
-        <Link href="#">CONTACT US</Link>
-        <Link href="#">MEMBER LOGIN</Link>
+        <Link href="/contact-us">CONTACT US</Link>
+        <Link href="/member-login">MEMBER LOGIN</Link>
       </div>
 
       {/* mobile devices */}
@@ -69,18 +70,34 @@ export default function NavBar() {
             z-50
             "
         >
-          {/* CHANGE: Added close button in top-right to close the menu */}
           <button
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              setOpenSection(null);
+            }}
             className="absolute top-2 right-10 text-white text-4xl font-bold text-center"
             aria-label="Close menu"
           >
             &times;
           </button>
-          <Link href="/" className="text-lg font-semibold">
+          <Link
+            href="/"
+            className="text-lg font-semibold"
+            onClick={() => {
+              setIsOpen(false);
+              setOpenSection(null);
+            }}
+          >
             HOME
           </Link>
-          <Link href="/about" className="text-lg font-semibold">
+          <Link
+            href="/about"
+            className="text-lg font-semibold"
+            onClick={() => {
+              setIsOpen(false);
+              setOpenSection(null);
+            }}
+          >
             ABOUT US
           </Link>
           <button
@@ -106,10 +123,24 @@ export default function NavBar() {
           </button>
           {openSection === "products" && (
             <div className="pl-4 flex flex-col space-y-2 w-full">
-              <Link href="#" className="text-base text-center">
+              <Link
+                href="/products"
+                className="text-base text-center"
+                onClick={() => {
+                  setIsOpen(false);
+                  setOpenSection(null);
+                }}
+              >
                 Our Products
               </Link>
-              <Link href="#" className="text-base text-center whitespace-nowrap">
+              <Link
+                href="/parksoft"
+                className="text-base text-center whitespace-nowrap"
+                onClick={() => {
+                  setIsOpen(false);
+                  setOpenSection(null);
+                }}
+              >
                 Parksoft&trade; Garage Management Software
               </Link>
             </div>
@@ -138,19 +169,47 @@ export default function NavBar() {
           </button>
           {openSection === "projects" && (
             <div className="pl-4 flex flex-col space-y-2 w-full">
-              <Link href="#" className="text-base text-center">
+              <Link
+                href="/projects"
+                className="text-base text-center"
+                onClick={() => {
+                  setIsOpen(false);
+                  setOpenSection(null);
+                }}
+              >
                 Current Projects
               </Link>
-              <Link href="#" className="text-base text-center whitespace-nowrap">
+              <Link
+                href="/case-studies"
+                className="text-base text-center whitespace-nowrap"
+                onClick={() => {
+                  setIsOpen(false);
+                  setOpenSection(null);
+                }}
+              >
                 Portfolio/Case Studies
               </Link>
             </div>
           )}
 
-          <Link href="#" className="text-lg font-semibold">
+          <Link
+            href="/contact-us"
+            className="text-lg font-semibold"
+            onClick={() => {
+              setIsOpen(false);
+              setOpenSection(null);
+            }}
+          >
             CONTACT US
           </Link>
-          <Link href="#" className="text-lg font-semibold">
+          <Link
+            href="member-login"
+            className="text-lg font-semibold"
+            onClick={() => {
+              setIsOpen(false);
+              setOpenSection(null);
+            }}
+          >
             MEMBER LOGIN
           </Link>
         </div>
