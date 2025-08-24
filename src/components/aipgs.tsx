@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { useEffect, useRef } from "react";
+import { Swiper as SwiperClass } from "swiper";
 
 export default function Aipgs() {
   const images = [
@@ -13,6 +15,20 @@ export default function Aipgs() {
     "/ai5.png",
     "/ai6.png",
   ];
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const handleSwiper = (swiper: SwiperClass) => {
+    swiper.autoplay.stop();
+    timeoutRef.current = setTimeout(() => {
+      if (swiper?.autoplay?.start) {
+        swiper.autoplay.start();
+      }
+    }, 6000);
+  };
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
 
   return (
     <section className="flex justify-center py-10 md:py-40">
@@ -20,10 +36,7 @@ export default function Aipgs() {
         {/* Swiper in left column */}
         <div className="w-full md:w-1/2 flex justify-center">
           <Swiper
-           onSwiper={(swiper) => {
-    swiper.autoplay.stop(); // initially stop
-    setTimeout(() => swiper.autoplay.start(), 6000); // start after 200ms
-  }}
+            onSwiper={handleSwiper}
             modules={[Navigation, Autoplay]}
             navigation
             autoplay={{ delay: 4000, disableOnInteraction: false }}
