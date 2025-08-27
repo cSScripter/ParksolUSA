@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
@@ -30,6 +30,7 @@ export default function OurPartners() {
   ];
 
   const [logoIndices, setLogoIndices] = useState([0, 0, 0, 0]);
+  const carouselRef = useRef(null);
 
   useEffect(() => {
     const intervals = logoSlides.map((slot, i) => {
@@ -47,7 +48,7 @@ export default function OurPartners() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center pt-5 md:pb-20 md:gap-5 md:pt-20 px-5 md:px-20">
+    <section ref={carouselRef} className="flex flex-col items-center pt-5 md:pb-20 md:gap-5 md:pt-20 px-5 md:px-20">
       <h2>
         Our <span className="font-bold">Partners</span>
       </h2>
@@ -70,6 +71,8 @@ export default function OurPartners() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 1 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
               />
             </AnimatePresence>
           </div>
