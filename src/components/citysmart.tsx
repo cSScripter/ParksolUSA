@@ -12,9 +12,9 @@ export default function CitySmart() {
           className="aspect-[498/332] object-cover"
         />
       </div>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col mb-5 md:mb-5 gap-5">
         <h2 className="text-center">
-        <span className="font-bold">Efforless</span> Vehicle Location
+          Making Cities <span className="font-bold">Smarter</span>
         </h2>
         <p className="text-center md:text-left p-5">
           Using up-to-date <span className="font-bold">data intelligence</span>{" "}
