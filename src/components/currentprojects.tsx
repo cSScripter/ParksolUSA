@@ -50,7 +50,7 @@ export default function CurrentProjects() {
                 alt={`Slide ${i + 1}`}
                 className="w-full h-full object-cover transition duration-1500 ease-out"
               />
-              <div className="absolute flex items-center md:items-start justify-center md:justify-start inset-0 lg:p-25 md:p-10">
+              <div className="absolute flex items-center lg:items-start md:items-center justify-center md:justify-start inset-0 lg:p-25 md:p-10">
                 <div className="bg-white opacity-90 p-4 md:p-6 lg:p-8 w-60 md:w-150 shadow-md">
                   <h3 className="!text-[18px] md:!text-[32px] lg:!text-[50px]">{slide.h3}</h3>
                   <h4 className="text-gray-600 mt:0 md:mt-1 mb-0 md:mb-6">{slide.h4}</h4>{" "}
