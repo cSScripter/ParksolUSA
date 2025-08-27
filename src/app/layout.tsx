@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
+import Footer from "@/components/footer";
 
 
 // Meta Data Title and Icon Tab
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
