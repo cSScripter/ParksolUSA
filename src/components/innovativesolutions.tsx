@@ -19,7 +19,7 @@ export default function InnovativeSolutions() {
  
   <iframe
     className="md:w-[29%] aspect-video border-0"
-    src="https://www.youtube.com/embed/yV5M6BCBhs0?si=sd2NBZB08kDPR_8h"
+    src="https://www.youtube-nocookie.com/embed/yV5M6BCBhs0?si=sd2NBZB08kDPR_8h"
     title="Parking Systems Overview Youtube Video"
     loading="lazy"
     allow="encrypted-media"
