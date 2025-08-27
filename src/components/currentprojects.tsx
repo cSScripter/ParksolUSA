@@ -51,15 +51,14 @@ export default function CurrentProjects() {
                 className="w-full h-full object-cover transition duration-1500 ease-out"
               />
               <div className="absolute flex items-center md:items-start justify-center md:justify-start inset-0 lg:p-25 md:p-10">
-                <div className="bg-white opacity-90 p-4 md:p-8 w-60 md:w-150 shadow-md">
-                  <h3 className="!text-[18px] md:!text-[50px]">{slide.h3}</h3>
-                  <br className="hidden md:block" />
-                  <h4 className="text-gray-600">{slide.h4}</h4>{" "}
-                  <br className="hidden md:block" />
+                <div className="bg-white opacity-90 p-4 md:p-6 lg:p-8 w-60 md:w-150 shadow-md">
+                  <h3 className="!text-[18px] md:!text-[32px] lg:!text-[50px]">{slide.h3}</h3>
+                  <h4 className="text-gray-600 mt:0 md:mt-1 mb-0 md:mb-6">{slide.h4}</h4>{" "}
+                
                   {slide.buttonText && (
                     <Link
                       href={slide.buttonLink}
-                      className="bg-[#5e748a] text-white font-bold text-xs md:text-lg hover:bg-blue-200 hover:text-black py-1 px-2 md:py-2 md:px-4 rounded-md"
+                      className="bg-[#5e748a] text-white font-bold text-xs md:text-xs lg:text-lg hover:bg-blue-200 hover:text-black py-1 px-2 md:py-2 md:px-4 rounded-md"
                     >
                       {slide.buttonText}
                     </Link>
