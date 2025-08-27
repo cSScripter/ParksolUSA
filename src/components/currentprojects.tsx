@@ -52,7 +52,7 @@ export default function CurrentProjects() {
               />
               <div className="absolute flex items-center md:items-start justify-center md:justify-start inset-0 lg:p-25 md:p-10">
                 <div className="bg-white opacity-90 p-4 md:p-8 w-60 md:w-150 shadow-md">
-                  <h3 className="md:!text-[50px]">{slide.h3}</h3>
+                  <h3 className="!text-[18px] md:!text-[50px]">{slide.h3}</h3>
                   <br className="hidden md:block" />
                   <h4 className="text-gray-600">{slide.h4}</h4>{" "}
                   <br className="hidden md:block" />

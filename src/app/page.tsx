@@ -8,6 +8,7 @@ import InnovativeSolutions from "@/components/innovativesolutions";
 import ParkingSimple from "@/components/parkingsimple";
 import CitySmart from "@/components/citysmart";
 import VehicleLocation from "@/components/vehiclelocation";
+import OurPartners from "@/components/ourpartners";
 
 export default function Home() {
 return (
@@ -21,6 +22,7 @@ return (
     <ParkingSimple />
     <CitySmart />
     <VehicleLocation />
+    <OurPartners />
   </>
 );
 }
