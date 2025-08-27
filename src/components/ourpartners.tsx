@@ -48,7 +48,7 @@ export default function OurPartners() {
   }, []);
 
   return (
-    <section ref={carouselRef} className="flex flex-col items-center pt-5 md:pb-20 md:gap-5 md:pt-20 px-5 md:px-20">
+    <section ref={carouselRef} className="flex flex-col items-center pt-10 md:pb-20 md:gap-5 md:pt-20 px-5 md:px-20">
       <h2>
         Our <span className="font-bold">Partners</span>
       </h2>
