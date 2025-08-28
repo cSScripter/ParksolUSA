@@ -1,16 +1,18 @@
+
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+
 export default function ContactUsPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [state, handleSubmit] = useForm("xandqyjv"); // your FormSpree form ID
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    // e.preventDefault(); // remove once formspree is setup
+  if (state.succeeded && !submitted) {
     setSubmitted(true);
-    
-     e.currentTarget.reset();
-
+    formRef.current?.reset(); // clears all input fields
     setTimeout(() => setSubmitted(false), 3000);
-  };
+  }
 
   return (
     <section className="flex flex-col items-center justify-center pt-10 md:pb-20 md:gap-5 md:pt-24 px-5">
@@ -22,10 +24,9 @@ export default function ContactUsPage() {
       </div>
       {/*Contact Form*/}
       <form
-        action="https://formspree.io/f/xandqyjv"
-        method="POST"
-        className="flex flex-col gap-5 md:gap-10 m-10"
+        ref={formRef}
         onSubmit={handleSubmit}
+        className="flex flex-col gap-5 md:gap-10 m-10"
       >
         <div className="flex gap-5 md:gap-10">
           <input
@@ -33,14 +34,20 @@ export default function ContactUsPage() {
             name="firstName"
             placeholder="First Name"
             className="flex-1 border-b-2 border-black p-1 focus:outline-none"
+            required
           />
+          <ValidationError prefix="First Name" field="firstName" errors={state.errors} />
+
           <input
             type="text"
             name="lastName"
             placeholder="Last Name"
             className="flex-1 border-b-2 border-black p-1 focus:outline-none"
+            required
           />
+          <ValidationError prefix="Last Name" field="lastName" errors={state.errors} />
         </div>
+
         <input
           type="email"
           name="email"
@@ -48,15 +55,20 @@ export default function ContactUsPage() {
           required
           className="w-full border-b-2 border-black p-1 focus:outline-none"
         />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+
         <textarea
           name="message"
           placeholder="Write a message"
           rows={5}
           className="w-full border-b-2 border-black p-1 focus:outline-none h-30"
+          required
         ></textarea>
+        <ValidationError prefix="Message" field="message" errors={state.errors} />
 
         <button
           type="submit"
+          disabled={state.submitting}
           className="w-max px-6 py-2 border bg-black text-white rounded-full"
         >
           Submit
