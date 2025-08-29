@@ -16,7 +16,7 @@ export default function ContactUsPage() {
 
   return (
     <section className="flex flex-col items-center justify-center pt-10 md:pb-20 md:gap-5 md:pt-24 px-5">
-      <div className="w-full max-w-[1000px]">
+      <div className="w-full max-w-[1000px] ">
         <h2 className="!font-bold text-center !text-[22px] lg:!text-[28px]">
           We would love to hear from you! To request a quote, inquire about
           availability, or for more information, please fill out the form below.
@@ -28,7 +28,7 @@ export default function ContactUsPage() {
         onSubmit={handleSubmit}
         className="flex flex-col gap-5 md:gap-10 m-10"
       >
-        <div className="flex gap-5 md:gap-10">
+        <div className="flex flex-col md:flex gap-5 md:gap-10">
           <input
             type="text"
             name="firstName"
