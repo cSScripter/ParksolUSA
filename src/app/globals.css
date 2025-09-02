@@ -11,6 +11,7 @@ Header {
   @apply fixed top-0 left-0 w-full z-50;
 }
 
+
 html, body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
@@ -49,6 +50,8 @@ nav a:hover {
   color: #0f31a6; /* Tailwind’s gray-900 */
   text-decoration: underline;
 }
+
+
 
 h1 {
   font-family: 'Montserrat', sans-serif; /*change later*/
@@ -93,6 +96,11 @@ li {
   color:black;
 }
 
+.experience-list li {
+  @apply italic font-medium !text-[18px];
+}
+
+
 a {
   text-decoration: none !important;
 }
@@ -119,6 +127,8 @@ a:hover {
 .swiper-slide-active img {
   filter: blur(0);
 }
+
+
 /* Small Screens */
 @media (max-width: 768px) {
   h1 {

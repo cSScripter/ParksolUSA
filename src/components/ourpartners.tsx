@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const MotionImage = motion(Image);
+const MotionImage = motion.create(Image);
 
 export default function OurPartners() {
   const logoSlides = [
@@ -65,6 +65,7 @@ export default function OurPartners() {
                 src={slot[logoIndices[i]]}
                 alt={`Partner ${i + 1}`}
                 fill
+                 sizes="224px"
                 className="object-contain"
                 priority={logoIndices[i] === 0}
                 initial={{ opacity: 0 }}

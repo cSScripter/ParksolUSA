@@ -1,5 +1,5 @@
 export default function CurrentProjectsPage() {
     return (
-    <>Current Projects</>
+    <section>Current Projects!</section>
     );
 }

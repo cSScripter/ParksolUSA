@@ -13,7 +13,7 @@ export default function ParkingSimple() {
           alt="Parking Garage Signs"
           width={433}
           height={288}
-          className="aspect-[650/430] object-cover"
+          className="object-cover"
         />
         <div className="flex flex-col">
           <h3 className="!font-normal text-center md:text-left">
@@ -36,7 +36,7 @@ export default function ParkingSimple() {
             <br />
           </h3>
           <Link
-            href="#"
+            href="/products"
             className="self-center md:self-start flex-grow-0 bg-[#5e748a] text-white text-xs md:text-lg hover:bg-blue-200 hover:text-black py-1 px-2 md:py-2 md:px-4"
           >
             View All Products

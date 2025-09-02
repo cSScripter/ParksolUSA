@@ -13,7 +13,7 @@ export default function InnovativeSolutions() {
           outdoor lot, or{" "}
           <span className="font-bold">
             anything in <br className="hidden md:block"/>
-            between
+            between.
           </span>
         </h3>
  

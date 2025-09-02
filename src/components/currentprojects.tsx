@@ -16,21 +16,21 @@ export default function CurrentProjects() {
       h3: "Current Project: LAX",
       h4: "Construction is underway to overhaul parking at one of the busiest airports in the world.",
       buttonText: "Read More",
-      buttonLink: "#",
+      buttonLink: "/projects",
     },
     {
       image: "/projectsRitz.jpg",
       h3: "Case Study: The Ritz-Carlton at Half Moon Bay",
       h4: "See a coastal parking garage transformed with the technology of smart parking.",
       buttonText: "Read More",
-      buttonLink: "#",
+      buttonLink: "/projects",
     },
     {
       image: "/projectsHooverDam.jpg",
       h3: "Case Study: The Hoover Dam",
       h4: "The national historic landmark received a much-needed ultramodern parking renovation.",
       buttonText: "Read More",
-      buttonLink: "#",
+      buttonLink: "/projects",
     },
   ];
   return (

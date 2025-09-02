@@ -28,7 +28,7 @@ export default function ContactUsPage() {
         onSubmit={handleSubmit}
         className="flex flex-col gap-5 md:gap-10 m-10"
       >
-        <div className="flex flex-col md:flex gap-5 md:gap-10">
+        <div className="flex flex-col md:flex-row gap-5 md:gap-10">
           <input
             type="text"
             name="firstName"
