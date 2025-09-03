@@ -13,6 +13,7 @@ export default function CaseStudiesPage() {
       width={980}
       height={1375}
       quality={100}
+      priority         
       className="object-contain p-5"
     />
 

@@ -51,7 +51,7 @@ export default function NavBar() {
         </div>
 
         <Link href="/contact-us">CONTACT US</Link>
-        <Link href="/member-login">MEMBER LOGIN</Link>
+        <Link href="https://members.parksolusa.com/">MEMBER LOGIN</Link>
       </div>
 
       {/* mobile devices */}
@@ -141,7 +141,7 @@ export default function NavBar() {
                   setOpenSection(null);
                 }}
               >
-                Parksoft&trade; Garage Management Software
+                Parksoft&trade; Garage <br />Management Software
               </Link>
             </div>
           )}
@@ -203,7 +203,7 @@ export default function NavBar() {
             CONTACT US
           </Link>
           <Link
-            href="member-login"
+            href="https://members.parksolusa.com/"
             className="text-lg font-semibold"
             onClick={() => {
               setIsOpen(false);

@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
 import Footer from "@/components/footer";
+import ScrollToTop from "@/components/scrolltotop";
 
 
 // Meta Data Title and Icon Tab
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased flex flex-col min-h-screen">
+        <ScrollToTop />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

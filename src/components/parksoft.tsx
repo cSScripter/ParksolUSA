@@ -43,7 +43,7 @@ export default function ParkSoft() {
               The most advanced garage management software avaliable.
             </p>
             <Link
-              href="#"
+              href="/parksoft"
               className="bg-[#67bfeb] text-white !text-[16px] md:text-lg hover:bg-[#12212f] py-1 px-2 md:py-3 md:px-4"
             >
               Learn More
