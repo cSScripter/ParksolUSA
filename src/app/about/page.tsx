@@ -12,6 +12,7 @@ export default function AboutUs() {
           alt="Omer Shloush Picture"
           width={382}
           height={382}
+          priority={true}
           className="object-contain aspect-square"
         />
       </div>

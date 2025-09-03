@@ -9,6 +9,7 @@ export default function ConstructionPage() {
         alt="Page under construction"
         width={380}
         height={300}
+        priority={true}
         className="object-contain" />
 </section>
     )
