@@ -44,25 +44,32 @@ export default function AboutUs() {
           establishes a solid foundation for future expansion into areas such as
           safety, security, service, and beyond.
         </p>
-        <p className="!font-bold my-10 md:my-20">Experience - Under our belt since 2019, we have completed and continue to service:</p>
+        <p className="!font-bold my-10 md:my-20">
+          Experience - Under our belt since 2019, we have completed and continue
+          to service:
+        </p>
         <div className="flex flex-col gap-5 md:gap-0 md:flex-row">
-           <ul className="list-none text-center md:text-left flex-1 experience-list">
-  <li>2019 City of Davis</li>
-  <li>2020 Hoover Dam</li>
-  <li>2019 Samsung HQ Plano TX</li>
-  <li>2022 Ritz Carlton Half Moon Bay</li>
-</ul>
+          <ul className="list-none text-center md:text-left flex-1 experience-list">
+            <li>2019 City of Davis</li>
+            <li>2020 Hoover Dam</li>
+            <li>2019 Samsung HQ Plano TX</li>
+            <li>2022 Ritz Carlton Half Moon Bay</li>
+          </ul>
 
-<ul className="list-none text-center md:text-right flex-1 experience-list">
-  <li>2021 Phoenix Airport</li>
-  <li>2020 Runway Mall</li>
-  <li>2023 City of Ventura</li>
-  <li>2023 LAWA - CTA Garages</li>
-</ul>
+          <ul className="list-none text-center md:text-right flex-1 experience-list">
+            <li>2021 Phoenix Airport</li>
+            <li>2020 Runway Mall</li>
+            <li>2023 City of Ventura</li>
+            <li>2023 LAWA - CTA Garages</li>
+          </ul>
         </div>
-        <p className="mt-5 md:mt-20">Developing and installing these projects helps us to understand who we are, learning what to do and more importantly what not to do. Realizing where we are strong is paving the road to our future.</p>
+        <p className="mt-5 md:mt-20">
+          Developing and installing these projects helps us to understand who we
+          are, learning what to do and more importantly what not to do.
+          Realizing where we are strong is paving the road to our future.
+        </p>
       </div>
-<OurPartners />
+      <OurPartners />
     </section>
   );
 }
