@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ShortLineBreak from "./shortlinebreak";
+import LongLineBreak from "./longlinebreak";
 
 export default function APGSSystem() {
   return (
@@ -49,6 +50,35 @@ export default function APGSSystem() {
         <p>Providing dynamic pricing, enforcement, "find my car," and automated valet scanning can be deployed using off-the-shelf cameras as well.</p>
 
       </div>
+      <div className="flex flex-col md:flex-row items-center justify-center mt-10 mx-5 md:mt-20 gap-5 md:gap-30 max-w-[940px]">
+        <div className="flex flex-col gap-5 max-w-[340px]">
+          <h2 className="!font-bold md:!text-[27px]">ParkPad™ Pro</h2>
+          <p>The newest addition to our product line - this sensor combines a dual-camera system with a built-in LED (green/red) indicator.</p>
+        </div>
+        <div>
+          <Image
+                src="/productspage/singlepod.png"
+                alt="pod at different angles"
+                width={425}
+                height={375}
+                className="object-cover" /></div>
+
+      </div>
+        <div className="flex flex-col md:flex-row items-center justify-center mx-5 my-10 gap-5 md:gap-30 max-w-[940px]">
+        <div className="flex flex-col gap-5 max-w-[340px]">
+          <h2 className="!font-bold md:!text-[27px]">Indoor/Outdoor Camera</h2>
+          <p>These camera assist in vehicle detection for counting and LPR</p>
+        </div>
+        <div>
+          <Image
+                src="/productspage/camera.png"
+                alt="pod at different angles"
+                width={420}
+                height={370}
+                className="object-cover" /></div>
+
+      </div>
+      <LongLineBreak />
     </section>
   );
 }
