@@ -3,7 +3,7 @@ import ShortLineBreak from "./shortlinebreak";
 
 export default function APGSSystem() {
   return (
-    <section className="flex flex-col items-center gap-2 justify-center pt-10 md:pb-20 md:pt-30 px-5 md:px-20 text-center">
+    <section className="flex flex-col items-center gap-2 justify-center pt-10 pb-5 md:pb-20 md:pt-30 px-5 md:px-20 text-center">
       <h2 className="!font-bold !text-[38px] md:!text-[44px]">Products</h2>
       <ShortLineBreak />
       <div className="flex flex-col gap-5 mt-15 text-center max-w-[840px]">
@@ -40,6 +40,14 @@ export default function APGSSystem() {
           <span className="font-bold">online platform</span> and will be guarded
           with our unique parking space guard gate.
         </p>
+          <Image
+                src="/productspage/3pods.png"
+                alt="pod at different angles"
+                width={850}
+                height={340}
+                className="object-contain" />
+        <p>Providing dynamic pricing, enforcement, "find my car," and automated valet scanning can be deployed using off-the-shelf cameras as well.</p>
+
       </div>
     </section>
   );
