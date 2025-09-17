@@ -48,10 +48,11 @@ export default function APGSSystem() {
           height={340}
           className="object-contain"
         />
-        <p>
-          Providing dynamic pricing, enforcement, "find my car," and automated
-          valet scanning can be deployed using off-the-shelf cameras as well.
-        </p>
+      <p>
+  Providing dynamic pricing, enforcement, &quot;find my car,&quot; and automated
+  valet scanning can be deployed using off-the-shelf cameras as well.
+</p>
+
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center mt-20 mx-5 md:mt-20 gap-5 md:gap-30 max-w-[940px]">
         <div className="flex flex-col gap-5 max-w-[380px]">
