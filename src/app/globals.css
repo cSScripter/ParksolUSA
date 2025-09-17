@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
 
 
 :root {
@@ -14,7 +16,7 @@ Header {
 
 html, body {
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat','Jost', sans-serif;
   padding-top:93px;
 }
 
@@ -39,7 +41,7 @@ Header {
 }
 nav a {
   color: #ffffff; 
-  font-family:  var(--font-montserrat), sans-serif;
+  font-family:  'Montserrat', sans-serif;
   font-weight: 400; 
   text-decoration: none;
   font-size: 17px;
@@ -79,6 +81,18 @@ h4 {
   font-weight: 400;
   font-size: 1.25rem;
   letter-spacing: 0.02em;
+}
+
+.mcp-list h2{
+  font-family: 'jost', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+.mcp-list li {
+  font-family: 'jost', sans-serif;
+  font-weight: 400;
 }
 
 p {
