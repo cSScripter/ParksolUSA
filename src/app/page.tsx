@@ -1,13 +1,13 @@
 import Header from "@/components/Header";
-import HomeSection from "@/components/homesection";
-import Aipgs from "@/components/aipgs";
-import CurrentProjects from "@/components/currentprojects";
-import FutureOfParking from "@/components/futureofparking";
-import ParkSoft from "@/components/parksoft";
-import InnovativeSolutions from "@/components/innovativesolutions";
-import ParkingSimple from "@/components/parkingsimple";
-import CitySmart from "@/components/citysmart";
-import VehicleLocation from "@/components/vehiclelocation";
+import HomeSection from "@/components/homepage/homesection";
+import Aipgs from "@/components/homepage/aipgs";
+import CurrentProjects from "@/components/homepage/currentprojects";
+import FutureOfParking from "@/components/homepage/futureofparking";
+import ParkSoft from "@/components/homepage/parksoft";
+import InnovativeSolutions from "@/components/homepage/innovativesolutions";
+import ParkingSimple from "@/components/homepage/parkingsimple";
+import CitySmart from "@/components/homepage/citysmart";
+import VehicleLocation from "@/components/homepage/vehiclelocation";
 import OurPartners from "@/components/ourpartners";
 
 export default function Home() {
