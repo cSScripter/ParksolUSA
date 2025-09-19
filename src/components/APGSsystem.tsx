@@ -49,7 +49,7 @@ export default function APGSSystem() {
           className="object-contain"
         />
       <p>
-  Providing dynamic pricing, enforcement, &quot;find my car,&quot; and automated
+  Providing dynamic pricing, enforcement, &quot;find my car&quot;, and automated
   valet scanning can be deployed using off-the-shelf cameras as well.
 </p>
 
@@ -99,7 +99,7 @@ export default function APGSSystem() {
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center mx-5 mt-10 mb-10 md:mt-20 md:mb-20 gap-5 md:gap-30 max-w-[940px]">
-        <div className="flex flex-col gap-5 max-w-[365px]">
+        <div className="flex flex-col gap-5 max-w-[365px] pb-5">
           <h2 className="!font-bold md:!text-[27px]">Indoor/Outdoor Camera</h2>
           <p>These camera assist in vehicle detection for counting and LPR</p>
         </div>
