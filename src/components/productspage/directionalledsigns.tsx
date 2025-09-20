@@ -52,7 +52,7 @@ export default function DirectionalLEDSigns() {
       <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
         <p className="max-w-[440px] pt-5 md:pt-20 md:ml-15">
           The model <span className="font-bold">L1-06D-LED-01</span>, six tiles
-          of 6.5" X 6.5" with 256 pixels each, can display a{" "}
+          of 6.5&quot; X 6.5&quot; with 256 pixels each, can display a{" "}
           <span className="font-bold">digit icon</span>, any other{" "}
           <span className="font-bold">symbol</span> that is desired, or an{" "}
           <span className="font-bold">image</span> from the prefilled library.
@@ -71,7 +71,7 @@ export default function DirectionalLEDSigns() {
       </div>
       <div className="flex flex-col md:flex-row gap-5 mt-5 md:mt-15 justify-center items-center">
         <p className="max-w-[460px] pt-5 pr-0 md:pr-15">
-          The model L1-06D-LED-01, <span className="font-bold">twelve</span> tiles of 6.5" X 6.5" with 256 pixels
+          The model L1-06D-LED-01, <span className="font-bold">twelve</span> tiles of 6.5&quot; X 6.5&quot; with 256 pixels
           each, can display a <span className="font-bold">digit icon</span>, any other <span className="font-bold">symbol</span> that is desired, or
           an <span className="font-bold">image</span> from the prefilled library.
         </p>
@@ -85,7 +85,7 @@ export default function DirectionalLEDSigns() {
       </div>
             <div className="flex flex-col md:flex-row gap-5 md:gap-10 mt-5 md:mt-15 justify-center items-center">
         <p className="max-w-[425px] pt-5">
-          The model L1-06D-LED-01, <span className="font-bold">eighteen</span> tiles of 6.5" X 6.5" with 256 pixels
+          The model L1-06D-LED-01, <span className="font-bold">eighteen</span> tiles of 6.5&quot; X 6.5&quot; with 256 pixels
           each, can display a <span className="font-bold">digit icon</span>, any other <span className="font-bold">symbol</span> that is desired, or
           an <span className="font-bold">image</span> from the prefilled library.
         </p>
