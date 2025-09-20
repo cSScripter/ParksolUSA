@@ -19,7 +19,7 @@ export default function DirectionalLEDSigns() {
             Benefits and Features
           </h2>
           <ul className="mcp-list text-left list-disc pl-5 md:pl-15">
-            <li>Smart LED six 6.5" X 6.5", 256 tiles each</li>
+            <li>Smart LED six 6.5&quot; X 6.5&quot;, 256 tiles each</li>
             <li>Multi-language, numbers, and symbols display</li>
             <li>64k colors</li>
             <li>Standard interface and prefilled images</li>
