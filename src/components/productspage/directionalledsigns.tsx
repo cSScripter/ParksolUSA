@@ -39,7 +39,7 @@ export default function DirectionalLEDSigns() {
           <span className="font-bold">four</span> tiles that can display{" "}
           <span className="font-bold">parking</span> or{" "}
           <span className="font-bold">traffic</span> data. Mostly used as an
-          insert within monument signs' housing. The LED sign can display ever
+          insert within monument signs&apos; housing. The LED sign can display ever
           letter in <span className="font-bold">any language, all numbers</span>
           , and supports both <span className="font-bold">standard icons</span>{" "}
           for the parking industry and{" "}
