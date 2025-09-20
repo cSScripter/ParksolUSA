@@ -82,7 +82,7 @@ export default function SensorsAndCameras() {
             The sensor detects and transmits parking availability in real-time.
             Designed for mounting on ceiling or cable channel.
           </p>
-          <ul className="text-left !text-xs list-disc pl-5 md:pl-13 mcp-list">
+          <ul className="text-left !text-xs list-disc pl-5 md:pl-12 mcp-list">
             <li className="!font-light">Quick Connection</li>
             <li className="!font-light">Din rail mounted</li>
             <li className="!font-light">High visibility LEDS</li>
