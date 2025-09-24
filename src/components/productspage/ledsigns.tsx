@@ -32,7 +32,7 @@ export default function LEDSigns() {
     Our icon LED sign measurements L= 12.6&quot; H= 6.56&quot;
   </p>
   <Image
-    src="/productspage/LEDfull2.png"
+    src="/productspage/LEDFull2.png"
     alt="icon LED sign with parking count"
     width={291}
     height={148}
