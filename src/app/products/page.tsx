@@ -4,6 +4,7 @@ import SensorsAndCameras from "@/components/productspage/sensorsandcameras";
 import DirectionalLEDSigns from "@/components/productspage/directionalledsigns";
 import LEDSigns from "@/components/productspage/ledsigns";
 import OutdoorSigns from "@/components/productspage/outdoorsigns";
+import IndoorSigns from "@/components/productspage/indoorsigns";
 export default function ProductsPage() {
     return (
     <>
@@ -13,6 +14,7 @@ export default function ProductsPage() {
      <DirectionalLEDSigns />
      <LEDSigns />
      <OutdoorSigns />
+     <IndoorSigns />
      </>
     )
 }
