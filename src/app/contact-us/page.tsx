@@ -1,6 +1,5 @@
-
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function ContactUsPage() {
@@ -8,11 +7,16 @@ export default function ContactUsPage() {
   const [state, handleSubmit] = useForm("xandqyjv"); // your FormSpree form ID
   const formRef = useRef<HTMLFormElement>(null);
 
-  if (state.succeeded && !submitted) {
-    setSubmitted(true);
-    formRef.current?.reset(); // clears all input fields
-    setTimeout(() => setSubmitted(false), 3000);
-  }
+  // ✅ Moved success handling into useEffect
+  useEffect(() => {
+    if (state.succeeded) {
+      setSubmitted(true);
+      formRef.current?.reset();
+
+      const timer = setTimeout(() => setSubmitted(false), 3000);
+      return () => clearTimeout(timer); // cleanup timeout if component unmounts
+    }
+  }, [state.succeeded]);
 
   return (
     <section className="flex flex-col items-center justify-center pt-10 md:pb-20 md:gap-5 md:pt-24 px-5">
@@ -22,7 +26,7 @@ export default function ContactUsPage() {
           availability, or for more information, please fill out the form below.
         </h2>
       </div>
-      {/*Contact Form*/}
+      {/* Contact Form */}
       <form
         ref={formRef}
         onSubmit={handleSubmit}
@@ -75,7 +79,7 @@ export default function ContactUsPage() {
         </button>
 
         <p
-          className={`!font-bold text-center transition-opacity duration-500 ${
+          className={`!font-bold text-center transition-opacity duration-1000 ${
             submitted ? "opacity-100" : "opacity-0"
           }`}
         >
