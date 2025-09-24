@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LEDSigns() {
   return (
-    <section className="flex flex-col items-center gap-2 justify-center pt-5 md:pt-15 pb-5 md:pb-20  px-5 text-center">
+    <section className="flex flex-col items-center gap-2 justify-center pt-5 md:pt-15 pb-5 md:pb-20 px-5 text-center">
       <h2 className="!font-bold md:!text-[27px] mb-5 md:mb-10">LED Signs</h2>
       <h3 className="!font-bold mb-10">Wayfinding and Inventory Displays</h3>
       <p className="max-w-[840px]">
@@ -16,31 +16,32 @@ export default function LEDSigns() {
         <span className="font-bold">web-based commands</span>.
       </p>
 
-      <div className="flex flex-col md:flex-row gap-5 md:gap-15 mt-5 md:mt-20 justify-center items-center">
-        <p className="max-w-[420px]">
-          Our standard LED sign measurements L= 25.4&quot; H= 6.56&quot;
-        </p>
-        <Image
-          src="/productspage/LEDfull.png"
-          alt="standard LED parking sign"
-          width={373}
-          height={96}
-          className="object-cover"
-        />
-      </div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-20 items-center justify-items-center my-5 md:my-20">
+  <p className="max-w-[400px]">
+    Our standard LED sign measurements L= 25.4&quot; H= 6.56&quot;
+  </p>
+  <Image
+    src="/productspage/LEDfull.png"
+    alt="standard LED parking sign"
+    width={373}
+    height={96}
+    className="object-cover"
+  />
 
-      <div className="flex flex-col md:flex-row gap-5 md:gap-15 my-5 md:my-20 justify-center items-center">
-        <p className="max-w-[440px] md:pr-20">
-          Our icon LED sign measurements L= 12.6&quot; H= 6.56&quot;
-        </p>
-        <Image
-          src="/productspage/LEDfull2.png"
-          alt="icon LED sign with parking count"
-          width={291}
-          height={148}
-          className="object-cover"
-        />
-      </div>
+  <p className="max-w-[380px]">
+    Our icon LED sign measurements L= 12.6&quot; H= 6.56&quot;
+  </p>
+  <Image
+    src="/productspage/LEDfull2.png"
+    alt="icon LED sign with parking count"
+    width={291}
+    height={148}
+    className="object-cover"
+  />
+</div>
+
+
+      
 
       <h3 className="!font-bold mb-5 md:mb-10">Typical Icons</h3>
       <div className="flex flex-col md:flex-row gap-5 md:gap-15">
@@ -79,8 +80,8 @@ export default function LEDSigns() {
         connect them to accommodate larger sizes
       </h3>
 
-      <div className="flex flex-col md:flex-row gap-5 md:gap-15 my-5 md:my-20 justify-center items-center">
-        <p className="max-w-[360px] md:pl-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 items-center justify-items-center">
+        <p className="max-w-[240px] justify-self-center ">
           Typical <span className="font-bold">LED</span> sign using our{" "}
           <span className="font-bold">two-modules</span> to display inventory
           and special group icons
@@ -92,9 +93,8 @@ export default function LEDSigns() {
           height={149}
           className="object-cover"
         />
-      </div>
-      <div className="flex flex-col md:flex-row gap-10 md:gap-15 mb-5 md:mb-20 justify-center items-center">
-        <p className="max-w-[340px] md:pr-24">
+
+        <p className="max-w-[240px]">
           Typical installation: the <span className="font-bold">indoor</span>{" "}
           bracket can be suspended from the{" "}
           <span className="font-bold">ceiling</span> or{" "}
