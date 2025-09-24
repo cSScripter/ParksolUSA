@@ -22,7 +22,7 @@ export default function ParkingBarriers() {
           height={429}
           className="object-cover mb-5 md:mb-24"
         />
-        <p className="max-w-[500px] text-left !text-[17px]">
+        <p className="max-w-[500px] text-left !text-[17px] mb-5">
           Drivers can now reserve their parking space ahead of time using an app
           on their phone. When they arrive to the parking lot, LPR(license plate
           recognition) detects their vehicle and allows entry, then detects the
