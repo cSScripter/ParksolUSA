@@ -10,14 +10,14 @@ export default function IndoorSigns() {
       <div className="flex flex-col md:flex-row gap-5 md:gap-10 mb-5 md:mb-10">
         <Image
           src="/productspage/indoorsign1.jpg"
-          alt="sign bracket installation"
+          alt="inndoor parking signs"
           width={469}
           height={313}
           className="object-cover"
         />
         <Image
           src="/productspage/indoorsign2.png"
-          alt="sign bracket installation"
+          alt="indoor parking garage signs"
           width={469}
           height={313}
           className="object-cover"

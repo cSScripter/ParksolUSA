@@ -5,6 +5,7 @@ import DirectionalLEDSigns from "@/components/productspage/directionalledsigns";
 import LEDSigns from "@/components/productspage/ledsigns";
 import OutdoorSigns from "@/components/productspage/outdoorsigns";
 import IndoorSigns from "@/components/productspage/indoorsigns";
+import ParkingBarriers from "@/components/productspage/parkingbarriers";
 export default function ProductsPage() {
     return (
     <>
@@ -15,6 +16,7 @@ export default function ProductsPage() {
      <LEDSigns />
      <OutdoorSigns />
      <IndoorSigns />
+     <ParkingBarriers />
      </>
     )
 }
