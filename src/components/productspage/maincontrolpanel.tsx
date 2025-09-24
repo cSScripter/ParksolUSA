@@ -71,13 +71,13 @@ export default function MainControlPanel() {
           purchases within the range of ParksolUSA products.
         </p>
       </div>
-      <h2 className="!font-bold md:!text-[27px] mt-10 md:mt-25 mb-5 px-5">
+      <h2 className="!font-bold md:!text-[27px] mt-10 md:mt-25 mb-5">
         Main Control Panel APGS Sensor Base
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center mb-5">
+      <div className="flex flex-col md:flex-row items-center justify-center mb-5 gap-5">
         <p className="max-w-[470px]">
           ParksolUSA MCP-APGS provides comprehensive management and control for
-          ParksolUSA APGS(AutomatedParkingGuidanceSystem) used with the <span className="font-bold">
+          ParksolUSA APGS(Automated Parking Guidance System) used with the <span className="font-bold">
           ParksolUSA TOF/Ultra-sonic System</span> and all subcontrol panels, GPUs,
           sensors,redundancy switches, power supplies, and communication
           interfaces.
@@ -124,7 +124,7 @@ export default function MainControlPanel() {
            <div className="flex flex-col md:flex-row items-center justify-center mb-5">
         <p className="max-w-[470px]">
           ParksolUSA MCP-APGS provides comprehensive management and control for
-          ParksolUSA APGS(AutomatedParkingGuidanceSystem) used with the <span className="font-bold">
+          ParksolUSA APGS(Automated Parking Guidance System) used with the <span className="font-bold">
           ParksolUSA TOF/Ultra-sonic System</span> and all subcontrol panels, GPUs,
           sensors,redundancy switches, power supplies, and communication
           interfaces.
