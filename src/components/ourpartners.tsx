@@ -1,12 +1,12 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const MotionImage = motion.create(Image);
 
 export default function OurPartners() {
-  const logoSlides = [
+  const logoSlides = useMemo(() => [
     [
       "/partnerlogos/avnet.png",
       "/partnerlogos/HUB.png",
@@ -27,7 +27,7 @@ export default function OurPartners() {
       "/partnerlogos/Samsung.png",
       "/partnerlogos/pittspa.png",
     ],
-  ];
+  ], []);
 
   const [logoIndices, setLogoIndices] = useState([0, 0, 0, 0]);
   const carouselRef = useRef(null);
@@ -45,7 +45,7 @@ export default function OurPartners() {
     });
 
     return () => intervals.forEach(clearInterval);
-  }, []);
+  }, [logoSlides]);
 
   return (
     <section ref={carouselRef} className="flex flex-col items-center pt-10 md:pb-20 md:gap-5 md:pt-20 px-5 md:px-20">
