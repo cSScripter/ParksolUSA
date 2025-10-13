@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 //change timer on loop
 export default function FutureOfParking() {
   const slides = [
-    { image: "/FuturePOD.png", textRight: null, textLeft: null },
-    { image: "/FUTUREsigns.png", textRight: null, textLeft: null },
+    { image: "/FuturePOD.png", alt: "4k Camera POD", textRight: null, textLeft: null },
+    { image: "/FUTUREsigns.png", alt: "smart custom signage", textRight: null, textLeft: null },
     {
       image: "/ai3.png",
+      alt: "AI detection software",
       textRight: "Designed for mounting on ceiling or cable channel",
       textLeft: "Detects and Transmits parking space availability in real-time",
     },
@@ -70,7 +71,7 @@ export default function FutureOfParking() {
             {/* Optional text */}
             {slides[current].textRight && slides[current].textLeft && (
               <motion.div
-                className="absolute bottom-10 text-center hidden md:block"
+                className="absolute bottom-10 text-center hidden lg:block px-5"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}

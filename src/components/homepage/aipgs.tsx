@@ -34,7 +34,7 @@ export default function Aipgs() {
     <section className="flex justify-center py-10 md:py-40">
       <div className="flex flex-col md:flex-row items-center gap-1 md:gap-16 w-full max-w-7xl px-6 md:px-0">
         {/* Swiper in left column */}
-        <div className="w-full md:w-1/2 flex justify-center">
+        <div className="w-full md:w-1/2 flex justify-center px-5 md:px-0">
           <Swiper
             onSwiper={handleSwiper}
             modules={[Navigation, Autoplay]}
