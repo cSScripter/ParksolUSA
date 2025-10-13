@@ -8,7 +8,7 @@ import ScrollToTop from "@/components/scrolltotop";
 // Meta Data Title and Icon Tab
 export const metadata: Metadata = {
   title: "ParksolUSA",
-  description: "Parking systems company specializing in the latest technology including AI detection, counting software, sensors, and LEDs.",
+  description: "Parking systems company specializing in the latest technology including AI detection, counting software, sensors, signs, and LEDs.",
   icons: {
     icon: "/favicon.png",
   },
