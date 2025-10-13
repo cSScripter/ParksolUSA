@@ -30,7 +30,7 @@ export default function FutureOfParking() {
     const nextIndex = (current + 1) % slides.length;
     const img = new Image();
     img.src = slides[nextIndex].image;
-  }, [current]);
+  }, [current, slides]);
 
   return (
     <section className="flex flex-col px-5 py-5 justify-center items-center mb-5 md:mb-30">
@@ -71,7 +71,7 @@ export default function FutureOfParking() {
             {/* Optional text */}
             {slides[current].textRight && slides[current].textLeft && (
               <motion.div
-                className="absolute bottom-10 text-center hidden lg:block px-5"
+                className="absolute bottom-10 text-center hidden :block px-5"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
