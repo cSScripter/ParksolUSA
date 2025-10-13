@@ -24,7 +24,7 @@ export default function FutureOfParking() {
       setCurrent((prev) => (prev + 1) % slides.length);
     }, duration * 1000);
     return () => clearInterval(interval);
-  }, [loopStarted]);
+  }, [loopStarted, slides.length, duration]);
 
   useEffect(() => {
     const nextIndex = (current + 1) % slides.length;
@@ -72,7 +72,7 @@ export default function FutureOfParking() {
             {/* Optional text */}
             {slides[current].textRight && slides[current].textLeft && (
               <motion.div
-                className="absolute bottom-10 text-center hidden :block px-5"
+                className="absolute bottom-10 text-center hidden lg:block px-5"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
