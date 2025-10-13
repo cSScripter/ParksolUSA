@@ -61,6 +61,7 @@ export default function FutureOfParking() {
             {/* Slide image */}
             <motion.img
               src={slides[current].image}
+              alt={slides[current].alt}
               className="object-contain max-w-full max-h-full"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
