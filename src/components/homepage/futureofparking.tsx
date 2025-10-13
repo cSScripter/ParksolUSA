@@ -1,9 +1,9 @@
 "use client";
 import { AnimatePresence, motion } from "motion/react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 //change timer on loop
 export default function FutureOfParking() {
-  const slides = [
+  const slides = useMemo(() => [
     { image: "/FuturePOD.png", alt: "4k Camera POD", textRight: null, textLeft: null },
     { image: "/FUTUREsigns.png", alt: "smart custom signage", textRight: null, textLeft: null },
     {
@@ -12,7 +12,7 @@ export default function FutureOfParking() {
       textRight: "Designed for mounting on ceiling or cable channel",
       textLeft: "Detects and Transmits parking space availability in real-time",
     },
-  ];
+  ], []);
 
   const duration = 5;
   const [current, setCurrent] = useState(0);
