@@ -13,13 +13,13 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="flex justify-between space-x-12">
-      <div className="hidden md:flex justify-between space-x-12">
+    <nav className="flex">
+      <div className="hidden md:flex justify- items-center space-x-4 lg:space-x-12">
         <Link href="/">HOME</Link>
-        <Link href="/about">ABOUT US</Link>
+        <Link href="/about" className="text-center">ABOUT US</Link>
 
         <div className="relative group">
-          <Link href="/products" className="flex items-center space-x-1 cursor-pointer">
+          <Link href="/products" className="flex text-center items-center space-x-1 cursor-pointer">
             <span>PRODUCTS AND SERVICES</span>
             <span className="text-xs leading-none">v</span>
           </Link>
@@ -50,8 +50,8 @@ export default function NavBar() {
           </div>
         </div>
 
-        <Link href="/contact-us">CONTACT US</Link>
-        <Link href="https://members.parksolusa.com/">MEMBER LOGIN</Link>
+        <Link href="/contact-us" className="text-center">CONTACT US</Link>
+        <Link href="https://members.parksolusa.com/" className="text-center">MEMBER LOGIN</Link>
       </div>
 
       {/* mobile devices */}
