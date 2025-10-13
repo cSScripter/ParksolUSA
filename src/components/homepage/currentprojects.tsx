@@ -61,7 +61,7 @@ export default function CurrentProjects() {
                       aria-label={`Read more about our parking system case study and smart parking solutions featured in ${slide.h3}`}
                       className="bg-[#5e748a] text-white font-bold text-xs md:text-xs lg:text-lg hover:bg-blue-200 hover:text-black py-1 px-2 md:py-2 md:px-4 rounded-md"
                     >
-                      {slide.buttonText}
+                      {slide.buttonText} <span className="sr-only"> about our case studies and parking solutions to Ritz-Carlton.</span>
                     </Link>
                   )}
                 </div>
