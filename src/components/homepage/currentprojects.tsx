@@ -4,6 +4,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 {
   /*replace button links at finish and possibly add circles at bottom, check if border displays bottom after next section is added*/
@@ -45,10 +46,11 @@ export default function CurrentProjects() {
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div className="relative w-full h-full">
-              <img
+              <Image
                 src={slide.image}
                 alt={`Slide ${i + 1}`}
-                className="w-full h-full object-cover transition duration-1500 ease-out"
+                fill
+                className="object-cover transition duration-1500 ease-out"
               />
               <div className="absolute flex items-center lg:items-start md:items-center justify-center md:justify-start inset-0 lg:p-25 md:p-10">
                 <div className="bg-white opacity-90 p-4 md:p-6 lg:p-8 w-60 md:w-150 shadow-md">
