@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import HomeSection from "@/components/homepage/homesection";
 import Aipgs from "@/components/homepage/aipgs";
 import CurrentProjects from "@/components/homepage/currentprojects";
