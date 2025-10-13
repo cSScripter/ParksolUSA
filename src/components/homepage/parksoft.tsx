@@ -44,6 +44,7 @@ export default function ParkSoft() {
             </p>
             <Link
               href="/parksoft"
+              aria-label="Learn more about ParkSoft garage management software and smart parking solutions"
               className="bg-[#67bfeb] text-white !text-[16px] md:text-lg hover:bg-[#12212f] py-1 px-2 md:py-3 md:px-4"
             >
               Learn More
